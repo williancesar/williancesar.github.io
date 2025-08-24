@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional CV of Willian Pereira César - Senior Software Engineer with 20+ years of experience in .NET, distributed systems, and technical leadership.">
+    <meta name="keywords" content="CV, Resume, Senior Software Engineer, .NET Developer, Technical Lead, Microsoft Orleans">
+    <meta name="author" content="Willian Pereira César">
+    
+    <title>Willian Pereira César - Professional CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Print-specific styles -->
+    <style>
+        @media print {
+            .main-navigation,
+            .download-section {
+                display: none !important;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+            
+            .cv-section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                margin-bottom: 1rem;
+                page-break-inside: avoid;
+            }
+            
+            .experience-item,
+            .education-item {
+                page-break-inside: avoid;
+            }
+            
+            h2, h3 {
+                color: #2c3e50 !important;
+            }
+            
+            .btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-navigation" id="navigation">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-brand">WPC</div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="#" class="active">CV</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Download Section -->
+    <section class="download-section section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="mb-md">Professional CV</h1>
+                <p class="mb-lg text-large">Download or view my complete professional resume</p>
+                <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
+                    <a href="assets/willian_cesar_cv_professional.pdf" class="btn btn-primary btn-large" target="_blank">📄 Download PDF</a>
+                    <button onclick="window.print()" class="btn btn-secondary btn-large">🖨️ Print CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Content -->
+    <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        
+        <!-- Header Section -->
+        <div class="cv-header">
+            <h1 class="cv-name">Willian Pereira César</h1>
+            <h2 class="cv-title">Senior Software Engineer</h2>
+            <div class="cv-contact">
+                <div class="cv-contact-item">
+                    <span>📍</span>
+                    <span>Porto, Portugal</span>
+                </div>
+                <div class="cv-contact-item">
+                    <span>📞</span>
+                    <span>+351 919 904 703</span>
+                </div>
+                <div class="cv-contact-item">
+                    <span>📧</span>
+                    <a href="mailto:willian.cesar@gmail.com">willian.cesar@gmail.com</a>
+                </div>
+                <div class="cv-contact-item">
+                    <span>🔗</span>
+                    <a href="https://linkedin.com/in/willianpereiracesar" target="_blank">willianpereiracesar</a>
+                </div>
+                <div class="cv-contact-item">
+                    <span>💻</span>
+                    <a href="https://github.com/williancesar" target="_blank">williancesar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="cv-section">
+            <h2 class="text-primary">Professional Summary</h2>
+            <p>
+                Senior Software Engineer with <strong>20+ years of experience</strong> leading teams and developing high-scale 
+                systems processing millions of daily transactions. Expert in .NET ecosystem, Microsoft 
+                Orleans, and distributed architectures with proven track record in legacy system modernization and 
+                technical leadership in global markets. Served as Tech Lead on projects serving <strong>+150k users</strong> and 
+                managed coordinated deployments across <strong>20+ worldwide markets</strong>. Seeking technical positions as 
+                Senior Software Engineer or Team Lead.
+            </p>
+        </div>
+
+        <!-- Technical Expertise -->
+        <div class="cv-section">
+            <h2 class="text-primary">Technical Expertise</h2>
+            
+            <div class="mb-lg">
+                <h3>Core Technologies (Expert Level)</h3>
+                <ul class="experience-achievements">
+                    <li><strong>Languages:</strong> C# (20+ years), JavaScript/TypeScript (10+ years)</li>
+                    <li><strong>Frameworks:</strong> .NET/.NET Core/.NET 8+, ASP.NET MVC, ASP.NET Core, ASP.NET Web API</li>
+                    <li><strong>Databases:</strong> MS SQL Server, PostgreSQL, MySQL, MongoDB, Cassandra</li>
+                    <li><strong>Architecture:</strong> Clean Architecture, Vertical Slices, Microservices, Microsoft Orleans, ETL Pipelines, Modular Monoliths</li>
+                </ul>
+            </div>
+
+            <div class="mb-lg">
+                <h3>Frontend & Full-Stack (Advanced)</h3>
+                <ul class="experience-achievements">
+                    <li><strong>Modern Frameworks:</strong> Angular, React, Vue.js, Next.js</li>
+                    <li><strong>Legacy Systems:</strong> jQuery, WebForms, Classic ASP</li>
+                </ul>
+            </div>
+
+            <div class="mb-lg">
+                <h3>Testing & Quality Assurance (Proficient)</h3>
+                <ul class="experience-achievements">
+                    <li><strong>Testing Frameworks:</strong> xUnit, NUnit</li>
+                    <li><strong>Functional Testing:</strong> Integration Test, Component Test, E2E Test</li>
+                    <li><strong>Performance Testing:</strong> Stress testing, Load testing</li>
+                    <li><strong>Code Quality:</strong> Unit Testing, TDD, Code Reviews</li>
+                </ul>
+            </div>
+
+            <div class="mb-lg">
+                <h3>GenAI (Proficient)</h3>
+                <ul class="experience-achievements">
+                    <li><strong>LLM Models:</strong> OpenAI, Anthropic</li>
+                    <li><strong>Core Concepts:</strong> Tokens, Context, Prompting, Embedding, RAG, MCP Servers, Agents</li>
+                    <li><strong>Tools:</strong> Semantic Kernel, Langchain, Claude Code, Github Copilot, Cursor</li>
+                </ul>
+            </div>
+
+            <div class="mb-lg">
+                <h3>DevOps & Infrastructure (Proficient)</h3>
+                <ul class="experience-achievements">
+                    <li><strong>Containerization:</strong> Docker, Kubernetes</li>
+                    <li><strong>CI/CD:</strong> Azure DevOps, GitHub Actions, Jenkins</li>
+                    <li><strong>Monitoring:</strong> Grafana, Kibana, NewRelic</li>
+                    <li><strong>Message Brokers:</strong> Kafka, RabbitMQ, Apache Pulsar</li>
+                    <li><strong>Cloud Platforms:</strong> Azure, AWS, Vercel, Supabase</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Leadership & Impact Achievements -->
+        <div class="cv-section">
+            <h2 class="text-primary">Leadership & Impact Achievements</h2>
+            
+            <div class="mb-lg">
+                <h3>Technical Leadership</h3>
+                <ul class="experience-achievements">
+                    <li><strong>Team Development:</strong> Mentored 25+ developers across different career levels over 5 years</li>
+                    <li><strong>Release Excellence:</strong> Coordinated 100+ production deployments with zero downtime</li>
+                    <li><strong>Architecture Leadership:</strong> Influenced technical decisions for teams of 15-25 people</li>
+                </ul>
+            </div>
+
+            <div class="mb-lg">
+                <h3>Performance & Scale Impact</h3>
+                <ul class="experience-achievements">
+                    <li><strong>High-Scale Systems:</strong> Maintained systems processing 4+ million daily transactions</li>
+                    <li><strong>System Reliability:</strong> Achieved 99.9%+ uptime in business-critical services</li>
+                    <li><strong>Performance Optimization:</strong> Delivered 40-60% latency reduction improvements</li>
+                </ul>
+            </div>
+
+            <div class="mb-lg">
+                <h3>Modernization & Business Value</h3>
+                <ul class="experience-achievements">
+                    <li><strong>Legacy Transformation:</strong> Successfully migrated 5+ legacy systems to modern platforms</li>
+                    <li><strong>Quality Culture:</strong> Increased test coverage from 45% to 85% across organizations</li>
+                    <li><strong>Cost Efficiency:</strong> Achieved 30% reduction in operational costs through optimization</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="cv-section">
+            <h2 class="text-primary">Professional Experience</h2>
+            
+            <!-- Kaizen Gaming -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Kaizen Gaming</h3>
+                        <h4 class="experience-company">Senior Software Engineer</h4>
+                    </div>
+                    <span class="experience-period">07/2024 – Present</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li><strong>Global Scale Operations:</strong> Maintain and develop Wallet service processing 4+ million daily transactions across 20 global markets for Betano/Stoiximan platforms</li>
+                    <li><strong>Performance Engineering:</strong> Implemented improvements using Microsoft Orleans and .NET 8, achieving 40% latency reduction and 99.9% uptime</li>
+                    <li><strong>Technical Leadership:</strong> Led 3 taxation projects in international markets with 100% regulatory compliance</li>
+                    <li><strong>Quality Excellence:</strong> Increased test coverage from 65% to 85% (unit, integration, component tests)</li>
+                    <li><strong>Release Management:</strong> Managed 24+ coordinated deployments with zero downtime</li>
+                    <li><strong>System Architecture:</strong> Implemented database sharding resulting in 60% throughput improvement</li>
+                </ul>
+            </div>
+
+            <!-- Genesis Studio -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Genesis Studio</h3>
+                        <h4 class="experience-company">Senior Software Engineer</h4>
+                    </div>
+                    <span class="experience-period">11/2022 – 07/2024</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li><strong>Team Leadership:</strong> Mentored 12+ developers achieving 100% team retention</li>
+                    <li><strong>Solution Architecture:</strong> Designed 8+ applications using .NET 8 and Clean Architecture</li>
+                    <li><strong>DevOps Transformation:</strong> Reduced deployment time from 4 hours to 15 minutes</li>
+                    <li><strong>Project Excellence:</strong> Maintained 90% adherence to deadlines despite scope changes</li>
+                    <li><strong>Global Delivery:</strong> Worked simultaneously with 5+ international clients</li>
+                </ul>
+            </div>
+
+            <!-- Outsystems -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Outsystems (Genesis Studio)</h3>
+                        <h4 class="experience-company">Team Lead – Professional Services</h4>
+                    </div>
+                    <span class="experience-period">11/2022 – 03/2024</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Led teams in Professional Service department for global clients</li>
+                    <li>Delivered expert services: development, code review, performance assessments, .NET library creation</li>
+                    <li>Provided technical coaching for client teams across different business domains</li>
+                </ul>
+            </div>
+
+            <!-- Basecone -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Basecone (Wolters Kluwer Company)</h3>
+                        <h4 class="experience-company">Product Software Engineer</h4>
+                    </div>
+                    <span class="experience-period">01/2021 – 11/2022</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li><strong>Enterprise Scale:</strong> Managed Identity Server processing 6 million monthly invoices for 150k+ users</li>
+                    <li><strong>Modernization:</strong> Migrated from .NET Framework 4.8 to .NET 6 with 50% performance gain</li>
+                    <li><strong>Architecture Guild:</strong> Influenced technical decisions for 20+ developers</li>
+                    <li><strong>Release Excellence:</strong> Coordinated 48+ bi-weekly releases with 99.8% availability</li>
+                    <li><strong>Cost Optimization:</strong> Implemented AWS Lambda Functions reducing costs by 30%</li>
+                    <li><strong>Quality Culture:</strong> Established testing practices, increasing coverage from 45% to 78%</li>
+                </ul>
+            </div>
+
+            <!-- Previous Career Highlights -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Previous Career Highlights</h3>
+                        <h4 class="experience-company">Multiple Companies</h4>
+                    </div>
+                    <span class="experience-period">2004 – 2021</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li><strong>Farfetch (2018-2019):</strong> Senior Backend Engineer – ETL pipelines processing 150k messages/min with 99.95% success rate</li>
+                    <li><strong>Agillitas (2017-2018):</strong> Senior Engineer – Travel platform development and team agile transformation</li>
+                    <li><strong>Rakuten Brazil (2017):</strong> Senior .NET Developer – E-commerce marketplace development</li>
+                    <li><strong>Mercado Eletrônico (2014-2016):</strong> Senior Developer – Multi-client platform integration</li>
+                    <li><strong>Early Career (2004-2014):</strong> Progressive roles across digital agencies, loyalty platforms, and pharmaceutical solutions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Personal Projects -->
+        <div class="cv-section">
+            <h2 class="text-primary">Personal Projects</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Yara Pet</h3>
+                        <h4 class="experience-company"><a href="https://yara.pet" target="_blank">https://yara.pet</a> - 2025</h4>
+                    </div>
+                    <span class="experience-period">Status: Validating</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li>A pet care marketplace to connect pet owners with local professionals</li>
+                    <li><strong>Solving Biggest Problems:</strong> Building trust between pet owners with local professionals charging zero commission fees</li>
+                    <li><strong>Tech Stack:</strong> Next.js 15+, React, DaisyUI, Tailwind CSS, Vercel, Supabase, Resend</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Vai Nascer!</h3>
+                        <h4 class="experience-company">2025</h4>
+                    </div>
+                    <span class="experience-period">Status: In Development</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li>A platform to help Brazilian pregnant women from the beginning until the post-partum, connecting professionals, family and support network</li>
+                    <li><strong>Solving Biggest Problems:</strong> Empower Brazilian women in this important moment of the life, providing a tool that helps everyone involved in the process</li>
+                    <li><strong>Tech Stack:</strong> Next.js 15+, React, Shadcn-ui, Tailwind CSS, Vercel, Supabase, Resend</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Tether Mind</h3>
+                        <h4 class="experience-company">2026</h4>
+                    </div>
+                    <span class="experience-period">Status: TBD</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li>A platform or app to track stress/anxiety levels in a daily-basis in order to provide guidance and help the user to seek for family/friends/professional support</li>
+                    <li><strong>Solving Biggest Problems:</strong> Being a personal assistant to help the user that isn't ready yet to share his problems to someone</li>
+                    <li><strong>Tech Stack:</strong> Next.js 15+, React, Shadcn-ui, Tailwind CSS, Vercel, Supabase, Resend and maybe a mobile app</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Tot</h3>
+                        <h4 class="experience-company">2026</h4>
+                    </div>
+                    <span class="experience-period">Status: TBD</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li>A mobile app that creates bed time stories to help parents connecting with his kids</li>
+                    <li><strong>Solving Biggest Problems:</strong> Creates infinite stories based on children age, using the correct vocabulary and complexity level</li>
+                    <li><strong>Tech Stack:</strong> Flutter or React Native</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+            <h2 class="text-primary">Education</h2>
+            
+            <div class="education-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Bachelor's Degree in Information Systems</h3>
+                        <h4 class="experience-company">UNIBAN</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Technology Degree in Data Processing</h3>
+                        <h4 class="experience-company">FITO</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="cv-section">
+            <h2 class="text-primary">Languages</h2>
+            <ul class="experience-achievements">
+                <li><strong>Portuguese:</strong> Native</li>
+                <li><strong>English:</strong> Advanced (C1)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Back to Top -->
+    <div class="text-center" style="padding: 2rem 0;">
+        <a href="#" class="btn btn-ghost" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">↑ Back to Top</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navigation');
+            if (nav) {
+                if (window.scrollY > 50) {
+                    nav.style.background = 'rgba(255, 255, 255, 0.98)';
+                    nav.style.boxShadow = '0 2px 20px rgba(128, 155, 206, 0.1)';
+                } else {
+                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                    nav.style.boxShadow = 'none';
+                }
+            }
+        });
+
+        // Close mobile menu when clicking links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all CV sections
+        document.querySelectorAll('.cv-section, .experience-item, .education-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
