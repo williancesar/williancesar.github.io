@@ -32,61 +32,66 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="main-navigation" id="navigation">
-        <div class="container">
-            <div class="nav-container">
-                <div class="nav-brand">WPC</div>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="willian_cesar_cv_professional.html">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header role="banner">
+        <nav class="main-navigation" id="navigation" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <a href="#home" aria-label="Willian Pereira César - Home">WPC</a>
+                    </div>
+                    
+                    <ul class="nav-links" id="navLinks" role="menubar">
+                        <li role="none"><a href="#home" class="active" role="menuitem" aria-current="page">Home</a></li>
+                        <li role="none"><a href="#about" role="menuitem">About</a></li>
+                        <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                        <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+                        <li role="none"><a href="willian_cesar_cv_professional.html" role="menuitem">CV</a></li>
+                        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                    </ul>
+                    
+                    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                    </button>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Willian Pereira César</h1>
-                    <h2 class="hero-subtitle">Senior Software Engineer</h2>
-                    <p class="hero-description">
-                        Transforming complex challenges into scalable solutions. 
-                        20+ years of engineering excellence, currently driving innovation at Kaizen Gaming, Porto.
-                    </p>
-                    
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary btn-large">View My Work</a>
-                        <a href="assets/willian_cesar_cv_professional.pdf" class="btn btn-outline btn-large" target="_blank">Download Resume</a>
+    <main role="main">
+        <section class="hero-section" id="home" aria-label="Introduction">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Willian Pereira César</h1>
+                        <p class="hero-subtitle">Senior Software Engineer</p>
+                        <p class="hero-description">
+                            Transforming complex challenges into scalable solutions. 
+                            20+ years of engineering excellence, currently driving innovation at Kaizen Gaming, Porto.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary btn-large">View My Work</a>
+                            <a href="assets/willian_cesar_cv_professional.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="hero-visual">
-                    <div class="profile-card">
-                        <img src="assets/willian_photo.jpg" alt="Willian Pereira César" class="profile-image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(255,255,255,0.2); box-shadow: 0 8px 32px rgba(0,0,0,0.1); margin: 0 auto; display: block;">
+                    
+                    <div class="hero-visual">
+                        <div class="profile-card">
+                            <img src="assets/willian_photo.jpg" alt="Professional headshot of Willian Pereira César" class="profile-image">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="text-center mb-lg">Professional Summary</h2>
+        <!-- About Section -->
+        <section class="section" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 class="text-center mb-lg" id="about-heading">Professional Summary</h2>
             <div class="grid grid-2">
                 <div>
                     <p class="text-large mb-md">
@@ -114,111 +119,111 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="section section-alt" id="skills">
-        <div class="container">
-            <h2 class="text-center mb-lg">Technical Expertise</h2>
+        <!-- Skills Section -->
+        <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 class="text-center mb-lg" id="skills-heading">Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>🚀 Core Technologies (Expert Level)</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">C# (20+ years)</span>
-                        <span class="skill-tag">JavaScript/TypeScript (10+ years)</span>
-                        <span class="skill-tag">.NET/.NET Core/.NET 8+</span>
-                        <span class="skill-tag">ASP.NET MVC</span>
-                        <span class="skill-tag">ASP.NET Core</span>
-                        <span class="skill-tag">ASP.NET Web API</span>
-                        <span class="skill-tag">MS SQL Server</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Microsoft Orleans</span>
-                        <span class="skill-tag">Clean Architecture</span>
-                        <span class="skill-tag">Microservices</span>
-                    </div>
+                    <h3><span class="skill-category__icon" aria-hidden="true">🚀</span> Core Technologies (Expert Level)</h3>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-tag">C# (20+ years)</li>
+                        <li class="skill-tag">JavaScript/TypeScript (10+ years)</li>
+                        <li class="skill-tag">.NET/.NET Core/.NET 8+</li>
+                        <li class="skill-tag">ASP.NET MVC</li>
+                        <li class="skill-tag">ASP.NET Core</li>
+                        <li class="skill-tag">ASP.NET Web API</li>
+                        <li class="skill-tag">MS SQL Server</li>
+                        <li class="skill-tag">PostgreSQL</li>
+                        <li class="skill-tag">MongoDB</li>
+                        <li class="skill-tag">Microsoft Orleans</li>
+                        <li class="skill-tag">Clean Architecture</li>
+                        <li class="skill-tag">Microservices</li>
+                    </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>🎨 Frontend & Full-Stack (Advanced)</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">WebForms</span>
-                        <span class="skill-tag">Classic ASP</span>
-                    </div>
+                    <h3><span class="skill-category__icon" aria-hidden="true">🎨</span> Frontend & Full-Stack (Advanced)</h3>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-tag">Angular</li>
+                        <li class="skill-tag">React</li>
+                        <li class="skill-tag">Vue.js</li>
+                        <li class="skill-tag">Next.js</li>
+                        <li class="skill-tag">jQuery</li>
+                        <li class="skill-tag">WebForms</li>
+                        <li class="skill-tag">Classic ASP</li>
+                    </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>🧪 Testing & Quality Assurance</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">xUnit</span>
-                        <span class="skill-tag">NUnit</span>
-                        <span class="skill-tag">Integration Testing</span>
-                        <span class="skill-tag">Component Testing</span>
-                        <span class="skill-tag">E2E Testing</span>
-                        <span class="skill-tag">TDD</span>
-                        <span class="skill-tag">Code Reviews</span>
-                        <span class="skill-tag">Performance Testing</span>
-                    </div>
+                    <h3><span class="skill-category__icon" aria-hidden="true">🧪</span> Testing & Quality Assurance</h3>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-tag">xUnit</li>
+                        <li class="skill-tag">NUnit</li>
+                        <li class="skill-tag">Integration Testing</li>
+                        <li class="skill-tag">Component Testing</li>
+                        <li class="skill-tag">E2E Testing</li>
+                        <li class="skill-tag">TDD</li>
+                        <li class="skill-tag">Code Reviews</li>
+                        <li class="skill-tag">Performance Testing</li>
+                    </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>🤖 GenAI (Proficient)</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">OpenAI</span>
-                        <span class="skill-tag">Anthropic</span>
-                        <span class="skill-tag">Semantic Kernel</span>
-                        <span class="skill-tag">Langchain</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">MCP Servers</span>
-                        <span class="skill-tag">Claude Code</span>
-                        <span class="skill-tag">GitHub Copilot</span>
-                    </div>
+                    <h3><span class="skill-category__icon" aria-hidden="true">🤖</span> GenAI (Proficient)</h3>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-tag">OpenAI</li>
+                        <li class="skill-tag">Anthropic</li>
+                        <li class="skill-tag">Semantic Kernel</li>
+                        <li class="skill-tag">Langchain</li>
+                        <li class="skill-tag">RAG</li>
+                        <li class="skill-tag">MCP Servers</li>
+                        <li class="skill-tag">Claude Code</li>
+                        <li class="skill-tag">GitHub Copilot</li>
+                    </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>☁️ DevOps & Infrastructure</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Azure DevOps</span>
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Kafka</span>
-                        <span class="skill-tag">RabbitMQ</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">NewRelic</span>
-                    </div>
+                    <h3><span class="skill-category__icon" aria-hidden="true">☁️</span> DevOps & Infrastructure</h3>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-tag">Docker</li>
+                        <li class="skill-tag">Kubernetes</li>
+                        <li class="skill-tag">Azure DevOps</li>
+                        <li class="skill-tag">GitHub Actions</li>
+                        <li class="skill-tag">Jenkins</li>
+                        <li class="skill-tag">Azure</li>
+                        <li class="skill-tag">AWS</li>
+                        <li class="skill-tag">Kafka</li>
+                        <li class="skill-tag">RabbitMQ</li>
+                        <li class="skill-tag">Grafana</li>
+                        <li class="skill-tag">NewRelic</li>
+                    </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>👥 Leadership & Impact</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Mentoring</span>
-                        <span class="skill-tag">Architecture Design</span>
-                        <span class="skill-tag">Technical Strategy</span>
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">Code Quality</span>
-                        <span class="skill-tag">Performance Optimization</span>
-                    </div>
+                    <h3><span class="skill-category__icon" aria-hidden="true">👥</span> Leadership & Impact</h3>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-tag">Team Leadership</li>
+                        <li class="skill-tag">Mentoring</li>
+                        <li class="skill-tag">Architecture Design</li>
+                        <li class="skill-tag">Technical Strategy</li>
+                        <li class="skill-tag">Project Management</li>
+                        <li class="skill-tag">Agile/Scrum</li>
+                        <li class="skill-tag">Code Quality</li>
+                        <li class="skill-tag">Performance Optimization</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <h2 class="text-center mb-lg">Featured Projects</h2>
+        <!-- Projects Section -->
+        <section class="section" id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 class="text-center mb-lg" id="projects-heading">Featured Projects</h2>
             <p class="text-center mb-xl text-large">
                 Explore my personal projects and professional work that demonstrate innovation and impact.
             </p>
@@ -236,25 +241,25 @@
                         </p>
                         
                         <div class="project-problem">
-                            <h4>🎯 Solving Problem</h4>
+                            <h4><span aria-hidden="true">🎯</span> Solving Problem</h4>
                             <p>Building trust between pet owners and local professionals while charging zero commission fees.</p>
                         </div>
                         
                         <div class="tech-stack">
                             <h4>Tech Stack</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Next.js 15+</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">DaisyUI</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                                <span class="tech-tag">Vercel</span>
-                                <span class="tech-tag">Supabase</span>
-                                <span class="tech-tag">Resend</span>
-                            </div>
+                            <ul class="tech-tags" role="list">
+                                <li class="tech-tag">Next.js 15+</li>
+                                <li class="tech-tag">React</li>
+                                <li class="tech-tag">DaisyUI</li>
+                                <li class="tech-tag">Tailwind CSS</li>
+                                <li class="tech-tag">Vercel</li>
+                                <li class="tech-tag">Supabase</li>
+                                <li class="tech-tag">Resend</li>
+                            </ul>
                         </div>
                         
                         <div class="project-links">
-                            <a href="https://yara.pet" class="btn btn-primary btn-small" target="_blank">Visit Site</a>
+                            <a href="https://yara.pet" class="btn btn-primary btn-small" target="_blank" rel="noopener noreferrer">Visit Site</a>
                         </div>
                     </div>
                 </div>
@@ -271,21 +276,21 @@
                         </p>
                         
                         <div class="project-problem">
-                            <h4>🎯 Solving Problem</h4>
+                            <h4><span aria-hidden="true">🎯</span> Solving Problem</h4>
                             <p>Empowering Brazilian women in this important moment of life, providing tools that help everyone involved in the process.</p>
                         </div>
                         
                         <div class="tech-stack">
                             <h4>Tech Stack</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Next.js 15+</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Shadcn-ui</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                                <span class="tech-tag">Vercel</span>
-                                <span class="tech-tag">Supabase</span>
-                                <span class="tech-tag">Resend</span>
-                            </div>
+                            <ul class="tech-tags" role="list">
+                                <li class="tech-tag">Next.js 15+</li>
+                                <li class="tech-tag">React</li>
+                                <li class="tech-tag">Shadcn-ui</li>
+                                <li class="tech-tag">Tailwind CSS</li>
+                                <li class="tech-tag">Vercel</li>
+                                <li class="tech-tag">Supabase</li>
+                                <li class="tech-tag">Resend</li>
+                            </ul>
                         </div>
                         
                         <div class="project-links">
@@ -306,19 +311,19 @@
                         </p>
                         
                         <div class="project-problem">
-                            <h4>🎯 Solving Problem</h4>
+                            <h4><span aria-hidden="true">🎯</span> Solving Problem</h4>
                             <p>Being a personal assistant to help users who aren't ready yet to share their problems with someone.</p>
                         </div>
                         
                         <div class="tech-stack">
                             <h4>Planned Tech Stack</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Next.js 15+</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Shadcn-ui</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                                <span class="tech-tag">Mobile App</span>
-                            </div>
+                            <ul class="tech-tags" role="list">
+                                <li class="tech-tag">Next.js 15+</li>
+                                <li class="tech-tag">React</li>
+                                <li class="tech-tag">Shadcn-ui</li>
+                                <li class="tech-tag">Tailwind CSS</li>
+                                <li class="tech-tag">Mobile App</li>
+                            </ul>
                         </div>
                         
                         <div class="project-links">
@@ -331,13 +336,13 @@
             <div class="text-center mt-xl">
                 <a href="projects.html" class="btn btn-primary btn-large">View All Projects</a>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Experience Section -->
-    <section class="section section-alt" id="experience">
-        <div class="container">
-            <h2 class="text-center mb-lg">Professional Experience</h2>
+        <!-- Experience Section -->
+        <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 class="text-center mb-lg" id="experience-heading">Professional Experience</h2>
             
             <div class="grid grid-1">
                 <!-- Current Role -->
@@ -402,16 +407,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section section" id="contact">
+    <section class="contact-section section" id="contact" aria-labelledby="contact-heading">
         <div class="container">
-            <h2 class="text-center mb-md">Let's Build Something Great Together</h2>
+            <h2 class="text-center mb-md" id="contact-heading">Let's Build Something Great Together</h2>
             <p class="text-center mb-xl text-large">
                 Open to discussing new opportunities and challenging projects.
             </p>
             
             <div class="contact-grid">
                 <div class="contact-item">
-                    <div class="contact-icon">📧</div>
+                    <div class="contact-icon" aria-hidden="true">📧</div>
                     <div class="contact-info">
                         <h4>Email</h4>
                         <a href="mailto:willian.cesar@gmail.com">willian.cesar@gmail.com</a>
@@ -419,34 +424,35 @@
                 </div>
                 
                 <div class="contact-item">
-                    <div class="contact-icon">🔗</div>
+                    <div class="contact-icon" aria-hidden="true">🔗</div>
                     <div class="contact-info">
                         <h4>LinkedIn</h4>
-                        <a href="https://linkedin.com/in/willianpereiracesar" target="_blank">Connect with me</a>
+                        <a href="https://linkedin.com/in/willianpereiracesar" target="_blank" rel="noopener noreferrer">Connect with me</a>
                     </div>
                 </div>
                 
                 <div class="contact-item">
-                    <div class="contact-icon">💻</div>
+                    <div class="contact-icon" aria-hidden="true">💻</div>
                     <div class="contact-info">
                         <h4>GitHub</h4>
-                        <a href="https://github.com/williancesar" target="_blank">View my code</a>
+                        <a href="https://github.com/williancesar" target="_blank" rel="noopener noreferrer">View my code</a>
                     </div>
                 </div>
                 
                 <div class="contact-item">
-                    <div class="contact-icon">📍</div>
+                    <div class="contact-icon" aria-hidden="true">📍</div>
                     <div class="contact-info">
                         <h4>Location</h4>
                         <span>Porto, Portugal</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2025 Willian Pereira César. All rights reserved.</p>
             <p>Built with passion and modern web technologies.</p>
@@ -459,9 +465,13 @@
         const navToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
         
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', !isExpanded);
+                navLinks.classList.toggle('active');
+            });
+        }
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -474,7 +484,10 @@
                         block: 'start'
                     });
                     // Close mobile menu after click
-                    navLinks.classList.remove('active');
+                    if (navLinks && navToggle) {
+                        navLinks.classList.remove('active');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
                 }
             });
         });
@@ -502,35 +515,50 @@
         });
 
         // Add scroll effect to navigation
-        window.addEventListener('scroll', () => {
+        let ticking = false;
+        function updateNavigation() {
             const nav = document.getElementById('navigation');
-            if (window.scrollY > 50) {
-                nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                nav.style.boxShadow = '0 2px 20px rgba(128, 155, 206, 0.1)';
-            } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = 'none';
-            }
-        });
-
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
+            if (nav) {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
                 }
-            });
-        }, observerOptions);
+            }
+            ticking = false;
+        }
+        
+        function onScroll() {
+            if (!ticking) {
+                requestAnimationFrame(updateNavigation);
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', onScroll, { passive: true });
 
-        // Observe all sections and cards
-        document.querySelectorAll('.section, .project-card, .skill-category, .experience-item').forEach(el => {
-            observer.observe(el);
-        });
+        // Add fade-in animation on scroll using Intersection Observer
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections and cards
+            const elementsToObserve = document.querySelectorAll('.section, .project-card, .skill-category, .experience-item');
+            elementsToObserve.forEach(el => {
+                observer.observe(el);
+            });
+        }
     </script>
 </body>
 </html>

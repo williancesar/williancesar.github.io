@@ -15,53 +15,58 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="main-navigation" id="navigation">
-        <div class="container">
-            <div class="nav-container">
-                <div class="nav-brand">WPC</div>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#skills">Skills</a></li>
-                    <li><a href="#" class="active">Projects</a></li>
-                    <li><a href="index.html#experience">Experience</a></li>
-                    <li><a href="willian_cesar_cv_professional.html">CV</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header role="banner">
+        <nav class="main-navigation" id="navigation" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <a href="index.html" aria-label="Willian Pereira César - Home">WPC</a>
+                    </div>
+                    
+                    <ul class="nav-links" id="navLinks" role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="index.html#about" role="menuitem">About</a></li>
+                        <li role="none"><a href="index.html#skills" role="menuitem">Skills</a></li>
+                        <li role="none"><a href="#" class="active" role="menuitem" aria-current="page">Projects</a></li>
+                        <li role="none"><a href="index.html#experience" role="menuitem">Experience</a></li>
+                        <li role="none"><a href="willian_cesar_cv_professional.html" role="menuitem">CV</a></li>
+                        <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+                    </ul>
+                    
+                    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                    </button>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="min-height: 60vh;">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    <h1 class="hero-title">Personal Projects</h1>
-                    <p class="hero-description">
-                        Exploring innovation through purpose-driven applications that solve real-world problems. 
-                        Each project represents a journey to create meaningful impact in people's lives.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#active-projects" class="btn btn-primary btn-large">View Active Projects</a>
-                        <a href="#upcoming-projects" class="btn btn-outline btn-large">Upcoming Ideas</a>
+    <main role="main">
+        <section class="hero-section hero-section--compact" aria-label="Projects introduction">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text hero-text--centered">
+                        <h1 class="hero-title">Personal Projects</h1>
+                        <p class="hero-description">
+                            Exploring innovation through purpose-driven applications that solve real-world problems. 
+                            Each project represents a journey to create meaningful impact in people's lives.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#active-projects" class="btn btn-primary btn-large">View Active Projects</a>
+                            <a href="#upcoming-projects" class="btn btn-outline btn-large">Upcoming Ideas</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Active Projects Section -->
-    <section class="section" id="active-projects">
-        <div class="container">
-            <h2 class="text-center mb-lg">Active Projects</h2>
+        <!-- Active Projects Section -->
+        <section class="section" id="active-projects" aria-labelledby="active-projects-heading">
+            <div class="container">
+                <h2 class="text-center mb-lg" id="active-projects-heading">Active Projects</h2>
             <p class="text-center mb-xl text-large">
                 Currently working on these innovative solutions
             </p>
@@ -88,7 +93,7 @@
                         </div>
                         
                         <div class="mb-md">
-                            <h4 style="color: var(--primary-color); margin-bottom: var(--space-sm);">🔑 Key Features</h4>
+                            <h4 class="project-features-heading"><span aria-hidden="true">🔑</span> Key Features</h4>
                             <ul class="experience-achievements">
                                 <li>Zero commission fee marketplace</li>
                                 <li>Verified professional profiles with ratings and reviews</li>
@@ -141,7 +146,7 @@
                         </div>
                         
                         <div class="mb-md">
-                            <h4 style="color: var(--primary-color); margin-bottom: var(--space-sm);">🔑 Key Features</h4>
+                            <h4 class="project-features-heading"><span aria-hidden="true">🔑</span> Key Features</h4>
                             <ul class="experience-achievements">
                                 <li>Pregnancy tracking with milestone celebrations</li>
                                 <li>Healthcare professional network and appointments</li>
@@ -386,11 +391,12 @@
                 <a href="index.html#contact" class="btn btn-primary btn-large">Get In Touch</a>
                 <a href="https://linkedin.com/in/willianpereiracesar" class="btn btn-outline btn-large" target="_blank">Connect on LinkedIn</a>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2025 Willian Pereira César. All rights reserved.</p>
             <p>Building the future, one project at a time.</p>
@@ -405,6 +411,8 @@
         
         if (navToggle && navLinks) {
             navToggle.addEventListener('click', () => {
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', !isExpanded);
                 navLinks.classList.toggle('active');
             });
         }
@@ -420,45 +428,59 @@
                         block: 'start'
                     });
                     // Close mobile menu after click
-                    if (navLinks) {
+                    if (navLinks && navToggle) {
                         navLinks.classList.remove('active');
+                        navToggle.setAttribute('aria-expanded', 'false');
                     }
                 }
             });
         });
 
         // Add scroll effect to navigation
-        window.addEventListener('scroll', () => {
+        let ticking = false;
+        function updateNavigation() {
             const nav = document.getElementById('navigation');
             if (nav) {
                 if (window.scrollY > 50) {
-                    nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                    nav.style.boxShadow = '0 2px 20px rgba(128, 155, 206, 0.1)';
+                    nav.classList.add('scrolled');
                 } else {
-                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                    nav.style.boxShadow = 'none';
+                    nav.classList.remove('scrolled');
                 }
             }
-        });
+            ticking = false;
+        }
+        
+        function onScroll() {
+            if (!ticking) {
+                requestAnimationFrame(updateNavigation);
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', onScroll, { passive: true });
 
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        // Add fade-in animation on scroll using Intersection Observer
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections and cards
+            const elementsToObserve = document.querySelectorAll('.section, .project-card, .card, .timeline-item');
+            elementsToObserve.forEach(el => {
+                observer.observe(el);
             });
-        }, observerOptions);
-
-        // Observe all sections and cards
-        document.querySelectorAll('.section, .project-card, .card, .timeline-item').forEach(el => {
-            observer.observe(el);
-        });
+        }
     </script>
 </body>
 </html>

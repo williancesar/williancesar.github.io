@@ -50,78 +50,84 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="main-navigation" id="navigation">
-        <div class="container">
-            <div class="nav-container">
-                <div class="nav-brand">WPC</div>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#skills">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="index.html#experience">Experience</a></li>
-                    <li><a href="#" class="active">CV</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header role="banner">
+        <nav class="main-navigation" id="navigation" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <a href="index.html" aria-label="Willian Pereira César - Home">WPC</a>
+                    </div>
+                    
+                    <ul class="nav-links" id="navLinks" role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="index.html#about" role="menuitem">About</a></li>
+                        <li role="none"><a href="index.html#skills" role="menuitem">Skills</a></li>
+                        <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+                        <li role="none"><a href="index.html#experience" role="menuitem">Experience</a></li>
+                        <li role="none"><a href="#" class="active" role="menuitem" aria-current="page">CV</a></li>
+                        <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+                    </ul>
+                    
+                    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                        <span class="nav-toggle__line" aria-hidden="true"></span>
+                    </button>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Download Section -->
-    <section class="download-section section">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="mb-md">Professional CV</h1>
-                <p class="mb-lg text-large">Download or view my complete professional resume</p>
-                <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
-                    <a href="assets/willian_cesar_cv_professional.pdf" class="btn btn-primary btn-large" target="_blank">📄 Download PDF</a>
-                    <button onclick="window.print()" class="btn btn-secondary btn-large">🖨️ Print CV</button>
+    <main role="main">
+        <section class="download-section section" aria-labelledby="cv-heading">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="mb-md" id="cv-heading">Professional CV</h1>
+                    <p class="mb-lg text-large">Download or view my complete professional resume</p>
+                    <div class="download-actions">
+                        <a href="assets/willian_cesar_cv_professional.pdf" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">📄</span> Download PDF</a>
+                        <button onclick="window.print()" class="btn btn-secondary btn-large"><span aria-hidden="true">🖨️</span> Print CV</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CV Content -->
-    <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <!-- CV Content -->
+        <article class="cv-content" role="document">
+            <div class="container">
         
-        <!-- Header Section -->
-        <div class="cv-header">
-            <h1 class="cv-name">Willian Pereira César</h1>
-            <h2 class="cv-title">Senior Software Engineer</h2>
-            <div class="cv-contact">
-                <div class="cv-contact-item">
-                    <span>📍</span>
-                    <span>Porto, Portugal</span>
+            <!-- Header Section -->
+            <header class="cv-header">
+                <h1 class="cv-name">Willian Pereira César</h1>
+                <p class="cv-title">Senior Software Engineer</p>
+                <div class="cv-contact">
+                    <div class="cv-contact-item">
+                        <span aria-hidden="true">📍</span>
+                        <span>Porto, Portugal</span>
+                    </div>
+                    <div class="cv-contact-item">
+                        <span aria-hidden="true">📞</span>
+                        <span>+351 919 904 703</span>
+                    </div>
+                    <div class="cv-contact-item">
+                        <span aria-hidden="true">📧</span>
+                        <a href="mailto:willian.cesar@gmail.com">willian.cesar@gmail.com</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <span aria-hidden="true">🔗</span>
+                        <a href="https://linkedin.com/in/willianpereiracesar" target="_blank" rel="noopener noreferrer">willianpereiracesar</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <span aria-hidden="true">💻</span>
+                        <a href="https://github.com/williancesar" target="_blank" rel="noopener noreferrer">williancesar</a>
+                    </div>
                 </div>
-                <div class="cv-contact-item">
-                    <span>📞</span>
-                    <span>+351 919 904 703</span>
-                </div>
-                <div class="cv-contact-item">
-                    <span>📧</span>
-                    <a href="mailto:willian.cesar@gmail.com">willian.cesar@gmail.com</a>
-                </div>
-                <div class="cv-contact-item">
-                    <span>🔗</span>
-                    <a href="https://linkedin.com/in/willianpereiracesar" target="_blank">willianpereiracesar</a>
-                </div>
-                <div class="cv-contact-item">
-                    <span>💻</span>
-                    <a href="https://github.com/williancesar" target="_blank">williancesar</a>
-                </div>
-            </div>
-        </div>
+            </header>
 
-        <!-- Professional Summary -->
-        <div class="cv-section">
-            <h2 class="text-primary">Professional Summary</h2>
+            <!-- Professional Summary -->
+            <section class="cv-section" aria-labelledby="summary-heading">
+                <h2 class="text-primary" id="summary-heading">Professional Summary</h2>
             <p>
                 Senior Software Engineer with <strong>20+ years of experience</strong> leading teams and developing high-scale 
                 systems processing millions of daily transactions. Expert in .NET ecosystem, Microsoft 
@@ -130,11 +136,11 @@
                 managed coordinated deployments across <strong>20+ worldwide markets</strong>. Seeking technical positions as 
                 Senior Software Engineer or Team Lead.
             </p>
-        </div>
+            </section>
 
-        <!-- Technical Expertise -->
-        <div class="cv-section">
-            <h2 class="text-primary">Technical Expertise</h2>
+            <!-- Technical Expertise -->
+            <section class="cv-section" aria-labelledby="expertise-heading">
+                <h2 class="text-primary" id="expertise-heading">Technical Expertise</h2>
             
             <div class="mb-lg">
                 <h3>Core Technologies (Expert Level)</h3>
@@ -183,11 +189,11 @@
                     <li><strong>Cloud Platforms:</strong> Azure, AWS, Vercel, Supabase</li>
                 </ul>
             </div>
-        </div>
+            </section>
 
-        <!-- Leadership & Impact Achievements -->
-        <div class="cv-section">
-            <h2 class="text-primary">Leadership & Impact Achievements</h2>
+            <!-- Leadership & Impact Achievements -->
+            <section class="cv-section" aria-labelledby="leadership-heading">
+                <h2 class="text-primary" id="leadership-heading">Leadership & Impact Achievements</h2>
             
             <div class="mb-lg">
                 <h3>Technical Leadership</h3>
@@ -215,11 +221,11 @@
                     <li><strong>Cost Efficiency:</strong> Achieved 30% reduction in operational costs through optimization</li>
                 </ul>
             </div>
-        </div>
+            </section>
 
-        <!-- Professional Experience -->
-        <div class="cv-section">
-            <h2 class="text-primary">Professional Experience</h2>
+            <!-- Professional Experience -->
+            <section class="cv-section" aria-labelledby="experience-heading">
+                <h2 class="text-primary" id="experience-heading">Professional Experience</h2>
             
             <!-- Kaizen Gaming -->
             <div class="experience-item">
@@ -310,11 +316,11 @@
                     <li><strong>Early Career (2004-2014):</strong> Progressive roles across digital agencies, loyalty platforms, and pharmaceutical solutions</li>
                 </ul>
             </div>
-        </div>
+            </section>
 
-        <!-- Personal Projects -->
-        <div class="cv-section">
-            <h2 class="text-primary">Personal Projects</h2>
+            <!-- Personal Projects -->
+            <section class="cv-section" aria-labelledby="projects-heading">
+                <h2 class="text-primary" id="projects-heading">Personal Projects</h2>
             
             <div class="experience-item">
                 <div class="experience-header">
@@ -375,11 +381,11 @@
                     <li><strong>Tech Stack:</strong> Flutter or React Native</li>
                 </ul>
             </div>
-        </div>
+            </section>
 
-        <!-- Education -->
-        <div class="cv-section">
-            <h2 class="text-primary">Education</h2>
+            <!-- Education -->
+            <section class="cv-section" aria-labelledby="education-heading">
+                <h2 class="text-primary" id="education-heading">Education</h2>
             
             <div class="education-item">
                 <div class="experience-header">
@@ -398,22 +404,22 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </section>
 
-        <!-- Languages -->
-        <div class="cv-section">
-            <h2 class="text-primary">Languages</h2>
-            <ul class="experience-achievements">
-                <li><strong>Portuguese:</strong> Native</li>
-                <li><strong>English:</strong> Advanced (C1)</li>
-            </ul>
-        </div>
-
-    </div>
+            <!-- Languages -->
+            <section class="cv-section" aria-labelledby="languages-heading">
+                <h2 class="text-primary" id="languages-heading">Languages</h2>
+                <ul class="experience-achievements">
+                    <li><strong>Portuguese:</strong> Native</li>
+                    <li><strong>English:</strong> Advanced (C1)</li>
+                </ul>
+            </section>
+        </article>
+    </main>
 
     <!-- Back to Top -->
-    <div class="text-center" style="padding: 2rem 0;">
-        <a href="#" class="btn btn-ghost" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">↑ Back to Top</a>
+    <div class="back-to-top">
+        <a href="#" class="btn btn-ghost back-to-top__link"><span aria-hidden="true">↑</span> Back to Top</a>
     </div>
 
     <!-- JavaScript -->
@@ -424,50 +430,75 @@
         
         if (navToggle && navLinks) {
             navToggle.addEventListener('click', () => {
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', !isExpanded);
                 navLinks.classList.toggle('active');
             });
         }
 
         // Add scroll effect to navigation
-        window.addEventListener('scroll', () => {
+        let ticking = false;
+        function updateNavigation() {
             const nav = document.getElementById('navigation');
             if (nav) {
                 if (window.scrollY > 50) {
-                    nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                    nav.style.boxShadow = '0 2px 20px rgba(128, 155, 206, 0.1)';
+                    nav.classList.add('scrolled');
                 } else {
-                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                    nav.style.boxShadow = 'none';
+                    nav.classList.remove('scrolled');
                 }
             }
-        });
+            ticking = false;
+        }
+        
+        function onScroll() {
+            if (!ticking) {
+                requestAnimationFrame(updateNavigation);
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', onScroll, { passive: true });
 
         // Close mobile menu when clicking links
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
-                if (navLinks) {
+                if (navLinks && navToggle) {
                     navLinks.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
                 }
             });
         });
 
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        // Add fade-in animation on scroll using Intersection Observer
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all CV sections
+            const elementsToObserve = document.querySelectorAll('.cv-section, .experience-item, .education-item');
+            elementsToObserve.forEach(el => {
+                observer.observe(el);
             });
-        }, observerOptions);
-
-        // Observe all CV sections
-        document.querySelectorAll('.cv-section, .experience-item, .education-item').forEach(el => {
-            observer.observe(el);
+        }
+        
+        // Back to top functionality
+        document.querySelector('.back-to-top__link')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     </script>
 </body>
