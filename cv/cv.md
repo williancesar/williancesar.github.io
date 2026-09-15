@@ -84,7 +84,7 @@ Tech Lead, or AI/Agentic Engineering specialist.
 
 ## Professional Experience
 
-### Independent Contractor | Senior Software Engineer – Agentic Engineering | 11/2025 – Present
+### Independent Contractor | Senior Software Engineer / AI Focused | 11/2025 – Present
 
 - **Agentic Enablement (Nex / Suno):** Engaged by consultancy Nex to enable Nex and Suno engineering squads to work with LLMs — Claude Code skills, subagents, hooks, rules, slash commands, context management and agentic pipelines adopted as everyday development tooling rather than a side experiment
 - **Reusable Agentic Workspace:** Designed and shipped a workspace template rolled out across Suno squads (Assets, Wallets), with cross-platform Python lifecycle hooks that detect feature-branch pushes and reconcile documentation against the code that actually shipped, keeping specs from drifting
