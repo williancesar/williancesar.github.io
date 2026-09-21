@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy policy for Personal Agent, a private personal assistant application operated by Willian Pereira César.">
+    <meta name="robots" content="noindex">
+    <title>Privacy Policy - Personal Agent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <style>
+        .policy { max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem; }
+        .policy h1 { margin-bottom: .5rem; }
+        .policy .updated { opacity: .7; font-size: .95rem; margin-bottom: 2.5rem; }
+        .policy h2 { margin-top: 2.5rem; margin-bottom: .75rem; }
+        .policy p, .policy li { line-height: 1.7; }
+        .policy ul { padding-left: 1.25rem; margin-bottom: 1rem; }
+        .policy a { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main class="policy">
+        <h1>Privacy Policy — Personal Agent</h1>
+        <p class="updated">Last updated: 21 September 2026</p>
+
+        <p>
+            <strong>Personal Agent</strong> is a private, self-hosted personal assistant
+            built and operated by Willian Pereira César for his own use. It is not a
+            commercial product, it is not distributed, and it has no users other than its
+            operator. This page exists to describe, honestly and specifically, how the
+            application handles Google user data.
+        </p>
+
+        <h2>What data the application accesses</h2>
+        <p>
+            The application requests a single Google OAuth scope:
+            <code>https://www.googleapis.com/auth/calendar</code>. It uses this scope to
+            read events from, and create, modify and delete events on, the calendar of the
+            single Google Account that authorises it — the operator's own account.
+        </p>
+        <p>
+            It does not request access to Gmail, Google Drive, Contacts, Sheets or Docs,
+            and it cannot read them.
+        </p>
+
+        <h2>How the data is used</h2>
+        <p>Calendar data is used for exactly two purposes:</p>
+        <ul>
+            <li>To send the operator reminders about his own upcoming events, through a private Telegram bot that accepts messages only from his own account.</li>
+            <li>To create or reschedule events on his own calendar when he asks for one in that same private chat.</li>
+        </ul>
+        <p>
+            Event text is sent to Anthropic's API for language processing, under
+            Anthropic's own terms, solely to interpret the operator's requests and compose
+            his reminders. No calendar data is used for advertising, profiling, resale, or
+            for training any model.
+        </p>
+
+        <h2>Where the data is stored</h2>
+        <p>
+            The application runs in a container on a private server rented by the
+            operator. The OAuth token and a small amount of reminder state are stored on
+            that server's disk, readable only by the account the application runs as. No
+            calendar data is stored anywhere else, and none of it is transmitted to any
+            third party other than the two services named above (Google, to read and write
+            the calendar, and Anthropic, to process language).
+        </p>
+
+        <h2>Sharing</h2>
+        <p>
+            No Google user data is shared with, sold to, or transferred to any third party,
+            under any circumstances.
+        </p>
+
+        <h2>Retention and deletion</h2>
+        <p>
+            The OAuth token is kept until it is revoked. The operator can revoke the
+            application's access at any time from the
+            <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Google Account permissions page</a>,
+            which immediately and permanently ends the application's ability to read or
+            write the calendar. Local state is deleted when the container's storage volume
+            is deleted.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            Questions about this policy: <a href="mailto:willian.cesar@gmail.com">willian.cesar@gmail.com</a>.
+        </p>
+
+        <p style="margin-top:3rem;"><a href="/">← Back to williancesar.github.io</a></p>
+    </main>
+</body>
+</html>
